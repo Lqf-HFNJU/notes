@@ -1,5 +1,7 @@
 # MySQL
 
+##### *LQF*
+
 [TOC]
 
 ------
@@ -1267,6 +1269,29 @@ public class myJdbc01 {
     }
 }
 ```
+
+属性配置文件jdbc.properties内容如下：
+
+```properties
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/hflqf?useSSL=false
+username=root
+password=123456
+```
+
+pom.xml文件导入mysql驱动依赖：
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.47</version>
+    </dependency>
+</dependencies>
+```
+
+
 
 ### 手写jdbc工具类
 
